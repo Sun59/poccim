@@ -1,0 +1,21 @@
+---
+# defaults file for apache
+
+#extra software
+ap_extra_software:
+- vim
+- git
+
+#document
+ap_http_host_dir: "creator_by_heart"
+
+#config file
+ap_http_conf_life: "creator_by_heart.conf"
+
+#httpd port
+ap_http_port: 8000
+
+#source
+ap_source_code_location: 'files/source_code/'
+
+

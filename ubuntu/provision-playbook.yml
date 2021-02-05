@@ -1,0 +1,11 @@
+--- 
+- 
+  name: "installation"
+  become: true
+  hosts: all
+  user: vagrant
+  roles: 
+    - 
+      role: apache
+      
+    
