@@ -179,7 +179,7 @@ Une fois notre archi télécharger via ansible-galaxy nous allons pouvoir parame
 	
 	
 ### Handelers:
-
+##handlers recensera les événements Ansible liés à des rôles pour nous apache
 
 ---
 (# handlers file for apache)
@@ -190,8 +190,8 @@ Une fois notre archi télécharger via ansible-galaxy nous allons pouvoir parame
 
 ## Docker
 
-	### Introduction:
 J'ai créé qu'un fichier Dockerfiles
+l'idée était de crée un fichier Dockerfiles avec une distrib alpine 3.13 et y faire tourner notre site 
 
 
 ##Git
@@ -204,15 +204,37 @@ git config --global user.email "hammouti.samir@gmail.com"
  
 on se met à la racine du dossier qu'on veut push
 
-cd /Users/samirhammouti/Projet
+* `cd /Users/samirhammouti/Projet`
 	
-git init
-git remote add origin https://gitlab.com/hammouti.samir/poc.git
-git add .
-git commit -m "commentaire"
-git push -u origin master
+* `git init`
+* `git remote add origin https://gitlab.com/hammouti.samir/poc.git`
 
-https://gitlab.com/hammouti.samir/poc
+* `git add .`
+* `git commit -m "commentaire"`
+* `git push -u origin master`
 
-git commit -m "commentaire"
-git push
+* `https://gitlab.com/hammouti.samir/poc`
+
+Si vous avez mis à jour le fichier sur votre poste et que vous voulez renvoyer les informations au repo git
+* `git add .`
+* `git commit -m "commentaire"`
+* `git push`
+
+
+##Conclusion 
+
+* `Créer une documentation avec mkdocs` - Ok.
+* `réation d’une machine virtuelle` - Ok.
+* `Ecrire le playbook de provisionnement` - Le plus compliqué dans le playbook de provisionnement c'était de faire la part des choses entre Ansible / Vagrant / Ma machine et ma VM
+des problèmes de connexion SSH notement par rapport à l'utilisateur qui se connecter (vagrant)
+pour le playbook de provisionement j'ai simplement copier mon home vers la vm  ça répondé une partie à la question je pense.
+* `Ecriture des tests d’un rôle apache` - C'était assez compliqué, la notion de rôles a été très compliqué à assimiler. entre playbook et rôles je ne comprenais pas. j'ai malgré tout une notion beaucoup plus claire et l'étendu de la fonctionnalité une fois maitrisé. j'ai réussi à crée un role d'installation apache
+* `Ecrire un playbook utilisant le rôle apache` - J'ai compris beaucoup trop tard pour commencer à produire quelques choses de viable.
+* `Ecrire un Dockerfile` - Lors de mon PT j'ai eu du mal à comprendre la cohabitation entre mon Mac OS / Homebrew / et Pipenv lors du building de mon Dockerfiles pour le test j'ai des errreurs de dépendance. (j'étais pas dans mon pipenv) 
+.
+
+
+Je n'ai vraiment pas l'habitude de rédiger des procédures sous cette formes.
+
+
+
