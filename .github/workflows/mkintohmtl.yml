@@ -17,12 +17,6 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: |
-          python3 -m pip install --upgrade pip     
-          python3 -m pip install mkdocs           
-          python3 -m pip install mkdocs-material    
-
       - name: build 
         uses: docker://sunshine59/mkdocs-build-action:1.0
 
@@ -31,18 +25,3 @@ jobs:
         with:
           publish_dir: ./site
           github_token: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Upload binaries to release
-        run: |
-          tar -czvf ma-doc.tar.gz site/
-
-
-      - name: Upload binaries to release
-        uses: svenstaro/upload-release-action@v2
-        with:
-          repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ma-doc.tar.gz
-          asset_name: madocs
-          tag: ${{ github.ref }}
-          overwrite: true
-          body: "madocstar1"
