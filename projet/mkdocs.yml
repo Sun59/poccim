@@ -9,5 +9,6 @@ nav:
     - Docker: Docker.md
     - Git: Git.md
     - Conclusion: Conclusion.md
+    - test: testseb.md
     - About: about.md
 theme: readthedocs

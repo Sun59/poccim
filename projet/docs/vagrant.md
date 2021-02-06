@@ -1,6 +1,6 @@
 # Vagrant
 
-	 ### Introduction: Vagrant est un des outils en ligne de commande qui permet de virtualiser rapidement des machines en utilisant la plupart des hyperviseurs comme HyperV, Libvirt, Parallels, VMWare et VirtualBox. 
+	### Introduction: Vagrant est un des outils en ligne de commande qui permet de virtualiser rapidement des machines en utilisant la plupart des hyperviseurs comme HyperV, Libvirt, Parallels, VMWare et VirtualBox. 
 	 Dans mon cas je vais devoir passer par homebrew pour l'installation.	
 	
 	### Installation:
@@ -54,7 +54,7 @@ configuration par defaut :
  
  configuration personnalisé : 
  
- * `https://gitlab.com/hammouti.samir/poc/-/blob/master/ubuntu/Vagrantfile`
+ [Vagrantfile](https://gitlab.com/hammouti.samir/poc/-/blob/master/ubuntu/Vagrantfile)
 
 il nous reste qu'a lancer notre fichier Vagrantfile
 
