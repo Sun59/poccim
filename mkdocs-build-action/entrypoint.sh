@@ -15,7 +15,7 @@ chmod -R a+w /github/workspace
 # Build the Mkdocs site
 ####################################################
 
-sudo pip install mkdocs-minify-plugin>=0.2 -H foo
+pip install mkdocs-minify-plugin==0.3.0
 
 mkdocs build
 
