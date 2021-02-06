@@ -31,12 +31,18 @@ jobs:
         with:
           publish_dir: ./site
           github_token: ${{secrets.GITHUB_TOKEN}}
-                
-      - name: Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+     
+     - name: Upload binaries to release
+       run: |
+       tar -czvf ma-doc.tar.gz site/
+
+
+      - name: Upload binaries to release
+        uses: svenstaro/upload-release-action@v2
         with:
-          tag_name: ${{ github.ref }}
-          release_name: Release ${{ github.ref }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ma-doc.tar.gz
+          asset_name: madocs
+          tag: ${{ github.ref }}
+          overwrite: true
+          body: "madocstar1"
