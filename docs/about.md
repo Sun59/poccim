@@ -1,1 +1,1 @@
-Pour le Rohan kor for the ice loxe
+Pour le Rohan kor for the ice loxes

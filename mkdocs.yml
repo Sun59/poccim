@@ -1,0 +1,14 @@
+site_name: madoc
+nav:
+    - Home: index.md    
+    - Vagrant: vagrant.md
+    - Ansible: Ansible.md
+    - Playbook: Playbook.md
+    - Tasks: Tasks.md
+    - Handlers: Handlers.md
+    - Docker: Docker.md
+    - Git: Git.md
+    - Conclusion: Conclusion.md
+    - test: testseb.md
+    - About: about.md
+theme: readthedocs
