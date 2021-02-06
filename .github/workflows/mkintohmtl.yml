@@ -31,10 +31,10 @@ jobs:
         with:
           publish_dir: ./site
           github_token: ${{secrets.GITHUB_TOKEN}}
-     
-     - name: Upload binaries to release
-       run: |
-       tar -czvf ma-doc.tar.gz site/
+
+      - name: Upload binaries to release
+        run: |
+          tar -czvf ma-doc.tar.gz site/
 
 
       - name: Upload binaries to release
