@@ -1,4 +1,0 @@
-[virtualboxBridge]
-192.168.1.38 ansible_user=vagrant ansible_pass=vagrant
-[virtualboxNAT]
-10.0.2.15 ansible_user=vagrant ansible_pass=vagrant
