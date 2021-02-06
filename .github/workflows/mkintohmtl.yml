@@ -17,6 +17,12 @@ jobs:
       - name: checkout
         uses: actions/checkout@v2
 
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip     
+          python3 -m pip install mkdocs           
+          python3 -m pip install mkdocs-material    
+
       - name: build 
         uses: docker://sunshine59/mkdocs-build-action:1.0
 
